@@ -410,3 +410,115 @@ newsletter-form {
     font-weight: 400;
     margin-bottom: 30px;
 }
+.product-detail-page {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #aaa;
+}
+
+
+/* PRODUCT SECTION */
+.product-section {
+    display: grid;
+    grid-template-columns: 70px 1fr 360px;
+    gap: 40px;
+    padding: 40px 60px;
+    border-bottom: 1px solid #eee;
+}
+
+.thumbs img {
+    width: 60px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.main-image img {
+    width: 100%;
+    max-height: 360px;
+    object-fit: contain;
+}
+
+.product-info h2 {
+    font-size: 18px;
+    margin: 0;
+}
+
+.brand {
+    font-size: 12px;
+    color: #777;
+}
+
+.price-btn {
+    margin: 15px 0;
+    padding: 10px;
+    background: #c9a56a;
+    border: none;
+    color: #fff;
+    width: 100%;
+}
+
+.info-links {
+    list-style: none;
+    padding: 0;
+    font-size: 12px;
+}
+
+.info-links li {
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background: #ddd;
+    border: none;
+}
+
+.secondary-btn.outline {
+    background: none;
+    border: 1px solid #aaa;
+}
+
+/* GREY INFO */
+.info-section {
+    background: #f2f2f2;
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    padding: 40px 60px;
+}
+
+.info-title {
+    font-size: 12px;
+    margin-bottom: 14px;
+}
+
+.view-more {
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* FORM */
+.form-section {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    padding: 40px 60px;
+}
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-right input {
+    padding: 10px;
+}
+
+.form-right button {
+    padding: 12px;
+    background: #000;
+    color: #fff;
+    border: none;
+}
