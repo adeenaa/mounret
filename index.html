@@ -2,197 +2,30 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Mounret – Luxury Interiors</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Optional font polish */
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
+        }
+    </style>
 </head>
 
 <body>
 
-    <!-- HEADER -->
-<header class="header">
-    <div class="logo">
-        <img src="images/logo.svg" alt="Mounret Logo">
-    </div>
+    <div data-include="home-partials/header.html"></div>
+    <div data-include="home-partials/hero.html"></div>
+    <div data-include="home-partials/categories.html"></div>
+    <div data-include="home-partials/feature.html"></div>
+    <div data-include="home-partials/design-book.html"></div>
+    <div data-include="home-partials/brands.html"></div>
+    <div data-include="home-partials/footer.html"></div>
 
-    <div class="right">
-       <div class="search-box">
-    <input type="text" placeholder="Search">
-    <button type="submit" class="search-btn">
-        <svg viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="11" cy="11" r="7"></circle>
-            <line x1="16.5" y1="16.5" x2="22" y2="22"></line>
-        </svg>
-    </button>
-</div>
-
-
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Collections</a>
-            <a href="#">Products</a>
-            <a href="#">Projects</a>
-            <a href="#">Contact</a>
-        </nav>
-    </div>
-</header>
-
-
-    <!-- HERO SECTION -->
-    <section class="hero">
-    <div class="hero-content">
-        
-        <p>A creative journey through luxury interiors</p>
-        <button>Explore Now</button>
-    </div>
-</section>
-
-
-    <!-- CATEGORY GRID -->
-  <!-- CATEGORY GRID -->
-<section class="categories">
-    <div class="category">
-        <img src="files/images/artworks.webp" alt="Artworks">
-        <span>ARTWORKS</span>
-    </div>
-
-    <div class="category">
-        <img src="files/images/mirrors.jpg" alt="Mirrors">
-        <span>MIRRORS</span>
-    </div>
-
-    <div class="category">
-        <img src="files/images/alarm.webp" alt="Hotel Alarm">
-        <span>HOTEL ALARM</span>
-    </div>
-
-    <div class="category">
-        <img src="files/images/vases and bowls.jpg" alt="Vases & Bowls">
-        <span>VASES & BOWLS</span>
-    </div>
-
-    <div class="category">
-        <img src="files/images/sculpture.jpg" alt="Sculpture">
-        <span>SCULPTURE</span>
-    </div>
-
-    <div class="category">
-        <img src="files/images/candlelight.webp" alt="Table Light & Candles">
-        <span>TABLE LIGHT & CANDLES</span>
-    </div>
-</section>
-
-
-    <!-- FEATURE BANNER -->
-   <section class="feature-section">
-    <div class="feature-overlay">
-        <p class="feature-text">
-            <span class="light">THE MOST POWERFUL TOOL</span><br> <span class="bold">TO INSPIRE</span><span class="light">CREATIVITY</span>
-            
-        
-        </p>
-    </div>
-</section>
-
-
-    <!-- NEWSLETTER -->
-  <section class="design-book-section">
-
-    <!-- LEFT IMAGE -->
-    <div class="book-left">
-        <img src="files/images/Ojp.webp" alt="Inspirations Book">
-    </div>
-
-    <!-- CENTER FORM -->
-    <div class="book-form">
-        <h3>THE ULTIMATE INSPIRATIONS DESIGN BOOK</h3>
-
-        <div class="radio-group">
-            <label>
-                <input type="radio" name="user_type" checked>
-                PROFESSIONAL
-            </label>
-            <label>
-                <input type="radio" name="user_type">
-                PRIVATE CLIENT
-            </label>
-        </div>
-
-        <form>
-            <div class="two-col">
-                <input type="text" placeholder="FIRST NAME*">
-                <input type="text" placeholder="LAST NAME*">
-            </div>
-
-            <input type="email" placeholder="EMAIL*">
-            <input type="text" placeholder="SELECT INDUSTRY">
-            <input type="text" placeholder="COMPANY">
-            <input type="text" placeholder="WEBSITE">
-
-            <button type="submit">DOWNLOAD NOW</button>
-        </form>
-    </div>
-
-    <!-- RIGHT PANEL -->
-    <div class="book-right-panel">
-        <h3>COVET HOUSE
-            CATALOGUE
-        </h3>
-       
-        <img src="files/images/Ojp.webp" alt="Design Book Cover">
-        <button class="outline-btn">DOWNLOAD NOW</button>
-    </div>
-
-</section>
-    <!-- BRANDS -->
-   <section class="brands">
-    <h2>OUR BRANDS</h2>
-
-    <div class="brand-slider">
-        <div class="brand-track">
-            <!-- ORIGINAL -->
-            <div class="brand"><img src="files/images/interiorbrand.jpg"></div>
-            <div class="brand"><img src="files/images/interiorbrand2.jpg"></div>
-            <div class="brand"><img src="files/images/interiorbrand3.jpg"></div>
-            <div class="brand"><img src="files/images/interiorbrand4.jpg"></div>
-            <div class="brand"><img src="files/images/interiorbrand2.jpg"></div>
-
-            <!-- DUPLICATE (MUST) -->
-             <div class="brand"><img src="files/images/interiorbrand.jpg"></div>
-            <div class="brand"><img src="files/images/interiorbrand2.jpg"></div>
-            <div class="brand"><img src="files/images/interiorbrand3.jpg"></div>
-            <div class="brand"><img src="files/images/interiorbrand4.jpg"></div>
-            <div class="brand"><img src="files/images/interiorbrand2.jpg"></div>
-        </div>
-    </div>
-</section>
-
-
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="footer-grid">
-            <div>
-                <h4>Customer Services</h4>
-                <p>Help & Contact</p>
-                <p>Returns</p>
-                <p>Terms & Conditions</p>
-            </div>
-            <div>
-                <h4>Company</h4>
-                <p>About Us</p>
-                <p>Careers</p>
-            </div>
-            <div>
-                <h4>Social Media</h4>
-                <p>Instagram</p>
-                <p>Facebook</p>
-            </div>
-        </div>
-        <p class="copyright">© 2026 Mounret</p>
-    </footer>
-
+    <script src="home-script.js"></script>
 </body>
 
 </html>

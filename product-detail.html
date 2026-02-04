@@ -1,313 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Product Page</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Optional font polish */
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
+    }
+  </style>
 </head>
+
 <body>
 
-<!-- PRODUCT SECTION -->
- <div class="product-detail-page">
-<section class="product-section">
+  <div class="product-detail-page">
 
-    <!-- LEFT THUMBNAILS -->
-    <div class="thumbs">
-        <img src="files/images/artworks.webp">
-        <img src="files/images/artworks.webp">
-        <img src="files/images/artworks.webp">
-    </div>
+    <!-- PRODUCT SECTIONS -->
+    <div data-include="product-detail-partials/product-section.html"></div>
 
-    <!-- MAIN IMAGE -->
-    <div class="main-image">
-        <img src="files/images/artworks.webp" id="currentImage">
-    </div>
+    <!-- ADDITIONAL INFO -->
+    <div data-include="product-detail-partials/additional-info.html"></div>
 
-    <!-- PRODUCT INFO -->
-    <div class="product-info">
-        <p class="breadcrumbs">HOME / SEATING / SOFAS</p>
-<div class="section-divider">
-    
+    <!-- CUSTOMIZATION -->
+    <div data-include="product-detail-partials/customization.html"></div>
 
-        <h2>IMPERFECTIO SOFA</h2>
-        <span class="pbrand">BOCA DO LOBO</span>
-</div>
-  <div class="purchase-row">
-
-    <!-- LEFT: STOCK + QTY -->
-    <div class="qty-stock">
-        <span class="stock-status in-stock">IN STOCK</span>
-        <!-- use: out-stock for OUT OF STOCK -->
-
-        <div class="quantity">
-            <button class="qty-btn minus" type="button">−</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn plus" type="button">+</button>
-        </div>
-    </div>
-
-    <!-- RIGHT: BUTTON -->
-    <button class="price-btn" type="button">GET PRICE</button>
+    <!-- TERMS -->
+    <div data-include="product-detail-partials/terms.html"></div>
 
   </div>
 
-
-<ul class="info-links">
-    <li>📄 PRODUCT SHEET PDF <span>›</span></li>
-    <li>📐 DOWNLOAD 3D / DWG FILES <span>›</span></li>
-    <li>🧵 REQUEST SAMPLES <span>›</span></li>
-</ul>
-
-
-        <div class="meta">
-    <p class="meta-title">DIMENSIONS</p>
-    <p>WIDTH: 226 CM &nbsp; | &nbsp; DEPTH: 96 CM &nbsp; | &nbsp; HEIGHT: 67 CM</p>
-    <p >WIDTH: 88.9" &nbsp; | &nbsp; DEPTH: 37.7" &nbsp; | &nbsp; HEIGHT: 26.3"</p>
-</div>
-
-     <div class="meta">
-    <p class="meta-title">MATERIALS AND FINISHES</p>
-    <p>MATERIALS: BRASS, LEATHER, METAL</p>
-    <p>FINISHES: LEATHER, METAL WORK, POLISHED BRASS, WOOD WORK</p>
-</div>
-
-
-        <button class="secondary-btn">TALK WITH A PRODUCT SPECIALIST</button>
-        <button class="secondary-btn outline">REQUEST CUSTOMIZATION</button>
-         <div class="share">
-    <span>SHARE:</span>
-    <div class="share-icons">
-        <span>🔗</span>
-        <span>📘</span>
-        <span>📌</span>
-        <span>✉️</span>
-    </div>
-</div>
-<p class="origin">HANDCRAFTED AND MADE IN PORTUGAL</p>
-    </div>
-
-
-</section>
-
-<!-- SECOND PRODUCT (same layout as screenshot) -->
-<section class="product-section">
-
-    <!-- LEFT THUMBNAILS -->
-    <div class="thumbs">
-        <img src="files/images/artworks.webp">
-        <img src="files/images/artworks.webp">
-        <img src="files/images/artworks.webp">
-    </div>
-
-    <!-- MAIN IMAGE -->
-    <div class="main-image">
-        <img src="files/images/artworks.webp" id="currentImage">
-    </div>
-
-    <!-- PRODUCT INFO -->
-    <div class="product-info">
-        <p class="breadcrumbs">HOME / SEATING / SOFAS</p>
-<div class="section-divider">
-    
-
-        <h2>IMPERFECTIO SOFA</h2>
-        <span class="pbrand">BOCA DO LOBO</span>
-</div>
-  <div class="purchase-row">
-
-    <!-- LEFT: STOCK + QTY -->
-    <div class="qty-stock">
-        <span class="stock-status in-stock">IN STOCK</span>
-        <!-- use: out-stock for OUT OF STOCK -->
-
-        <div class="quantity">
-            <button class="qty-btn minus" type="button">−</button>
-            <span class="qty-value">1</span>
-            <button class="qty-btn plus" type="button">+</button>
-        </div>
-    </div>
-
-    <!-- RIGHT: BUTTON -->
-    <button class="price-btn" type="button">GET PRICE</button>
-
-  </div>
-
-
-<ul class="info-links">
-    <li>📄 PRODUCT SHEET PDF <span>›</span></li>
-    <li>📐 DOWNLOAD 3D / DWG FILES <span>›</span></li>
-    <li>🧵 REQUEST SAMPLES <span>›</span></li>
-</ul>
-
-
-        <div class="meta">
-    <p class="meta-title">DIMENSIONS</p>
-    <p>WIDTH: 226 CM &nbsp; | &nbsp; DEPTH: 96 CM &nbsp; | &nbsp; HEIGHT: 67 CM</p>
-    <p >WIDTH: 88.9" &nbsp; | &nbsp; DEPTH: 37.7" &nbsp; | &nbsp; HEIGHT: 26.3"</p>
-</div>
-
-     <div class="meta">
-    <p class="meta-title">MATERIALS AND FINISHES</p>
-    <p>MATERIALS: BRASS, LEATHER, METAL</p>
-    <p>FINISHES: LEATHER, METAL WORK, POLISHED BRASS, WOOD WORK</p>
-</div>
-
-
-        <button class="secondary-btn">TALK WITH A PRODUCT SPECIALIST</button>
-        <button class="secondary-btn outline">REQUEST CUSTOMIZATION</button>
-         <div class="share">
-    <span>SHARE:</span>
-    <div class="share-icons">
-        <span>🔗</span>
-        <span>📘</span>
-        <span>📌</span>
-        <span>✉️</span>
-    </div>
-</div>
-<p class="origin">HANDCRAFTED AND MADE IN PORTUGAL</p>
-    </div>
-
-
-</section>
-
-<!-- GREY INFO SECTION -->
-<section class="additional-info">
-
-  <!-- LEFT MENU -->
-  <div class="info-menu">
-    <p class="active">ADDITIONAL INFO</p>
-    <p>CUSTOMIZATION</p>
-    <p>TERMS AND CONDITIONS</p>
-  </div>
-
-  <!-- RIGHT CONTENT -->
-  <div class="info-content">
-
-    <p class="info-text">
-      <em>Lumiere Wall Lamp</em> is an antique fixture in polished gold plated brass
-      with an intricate edge detailing arm topped by an elegant pane glass
-      lantern hand-sculpted by a casting mold.
-    </p>
-
-    <div class="info-block">
-      <p class="spec-title">DIMENSIONS</p>
-      <p class="spec-text">
-        WIDTH: 30 CM &nbsp;|&nbsp; DEPTH: 60 CM &nbsp;|&nbsp; HEIGHT: 45 CM<br>
-        WIDTH: 11.8 IN &nbsp;|&nbsp; DEPTH: 23.6 IN &nbsp;|&nbsp; HEIGHT: 17.7 IN
-      </p>
-    </div>
-
-    <div class="info-block">
-      <p class="spec-title">MATERIALS AND FINISHES</p>
-      <p class="spec-text">
-        CASTED BRASS, GUN BLACK FINISH.
-      </p>
-    </div>
-
-    <a class="discover-link">Discover more about Boca Do Lobo here.</a>
-
-    <a class="view-more">VIEW MORE ˄</a>
-
-  </div>
-
-</section>
-<section class="info-bottom">
-
-  <!-- LEFT MENU -->
-  <div class="info-menu">
-    <p>ADDITIONAL INFO</p>
-    <p class="active">CUSTOMIZATION</p>
-    <p>TERMS AND CONDITIONS</p>
-  </div>
-
-  <!-- RIGHT CONTENT -->
-  <div class="info-bottom-content">
-
-    <!-- TEXT -->
-    <div class="custom-text">
-      <p>
-        Change dimensions or standard products, as well as finishes and
-        even materials. In the end, our goal is to make our designs
-        highlight the character of your interiors.
-      </p>
-    </div>
-
-    <!-- FORM -->
-    <form class="custom-form">
-
-      <p class="form-title">SELECT YOUR PROFILE</p>
-
-      <div class="radio-group">
-        <label><input type="radio" checked> PROFESSIONAL</label>
-        <label><input type="radio"> PRIVATE CLIENT</label>
-      </div>
-
-      <div class="form-grid">
-        <input type="text" placeholder="FIRST NAME*">
-        <input type="text" placeholder="LAST NAME*">
-        <input type="email" placeholder="EMAIL*">
-        <input type="text" placeholder="SELECT INDUSTRY">
-        <input type="text" placeholder="COMPANY">
-      </div>
-
-      <button type="submit" class="request-btn">
-        REQUEST CUSTOMIZATION
-      </button>
-
-    </form>
-
-  </div>
-
-</section>
-<section class="terms-section">
-
-  <!-- LEFT MENU -->
-  <div class="info-menu">
-    <p>ADDITIONAL INFO</p>
-    <p>CUSTOMIZATION</p>
-    <p class="active">TERMS AND CONDITIONS</p>
-  </div>
-
-  <!-- RIGHT CONTENT -->
-  <div class="terms-content">
-
-    <h4>PRICE</h4>
-    <ol>
-      <li>
-        We reserve the right, without prior notice, to discontinue or change
-        specifications and prices on products.
-      </li>
-      <li>
-        Prices always refer to a single unit and VAT is not included in the price.
-        Legal taxes and fees must be subsequently added.
-      </li>
-      <li>
-        The prices are EX WORKS from Porto, Portugal. They do not include shipping
-        or assembly service.
-      </li>
-      <li>
-        Specifications, upholstery times, prices include the standard fabric.
-        In case a different fabric from one of the brands from Covet House is
-        required, the client contact sales regarding pricing.
-      </li>
-      <li>
-        Standard packaging is included in the price. Should the client require
-        specific packaging, it will be charged accordingly.
-      </li>
-    </ol>
-
-    <h4>ACCOUNTS & PAYMENT TERMS</h4>
-    <p>
-      Payment terms and conditions are subject to approval and may vary depending
-      on the order value, client profile, and destination.
-    </p>
-
-  </div>
-
-</section>
-
-
-</div>
+  <script src="home-script.js"></script>
 </body>
+
 </html>

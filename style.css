@@ -77,43 +77,6 @@ h3{
     font-size: 14px;
 }
 
-
-/* HERO */
-.hero {
-    height: 80vh;
-    background: url("files/images/home4.jpg") ;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 40px;
-    object-fit: contain;
-}
-
-.hero-content {
-    text-align: center;          /* centers text & button */
-    display: flex;
-    flex-direction: column;      /* stack h1, p, button */
-    align-items: center;         /* center button */
-}
-
-.hero-content h1 {
-    font-size: 48px;
-    color: #fff;
-}
-
-.hero-content p {
-    margin: 15px 0;
-    color: #ccc;
-}
-
-.hero-content button {
-    margin-top: 10px;
-    padding: 12px 30px;
-    background: rgb(246, 242, 242);
-    border: none;
-    cursor: pointer;
-}
-
 /* CATEGORY GRID */
 .categories {
     display: grid;

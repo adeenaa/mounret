@@ -1,0 +1,41 @@
+<header class="fixed w-full top-0 z-50 bg-black/90 backdrop-blur border-b border-neutral-600">
+    <div class="mx-auto max-w-7xl px-6 py-4 flex items-center justify-between">
+
+        <!-- LOGO -->
+        <div class="flex items-center">
+            <img src="images/logo.svg" alt="Mounret Logo" class="h-8 w-auto" />
+        </div>
+
+        <!-- RIGHT -->
+        <div class="flex items-center gap-8">
+
+            <!-- SEARCH -->
+            <div class="hidden md:flex items-center gap-2 rounded-full border border-neutral-300 px-4 py-2">
+                <input type="text" placeholder="Search"
+                    class="bg-transparent text-sm text-neutral-200 placeholder-neutral-400 focus:outline-none" />
+                <button>
+                    <svg class="h-4 w-4 text-neutral-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="11" cy="11" r="7"></circle>
+                        <line x1="16.5" y1="16.5" x2="22" y2="22"></line>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- NAV -->
+            <nav class="hidden md:flex items-center gap-8 text-sm tracking-wide text-neutral-400">
+                <a href="#" class="hover:text-white transition">Home</a>
+                <a href="#" class="hover:text-white transition">Collections</a>
+                <a href="#" class="hover:text-white transition">Products</a>
+                <a href="#" class="hover:text-white transition">Projects</a>
+                <a href="#" class="hover:text-white transition">Contact</a>
+            </nav>
+
+            <!-- MOBILE MENU PLACEHOLDER -->
+            <button class="md:hidden text-neutral-800">
+                ☰
+            </button>
+
+        </div>
+    </div>
+</header>
