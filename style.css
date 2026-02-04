@@ -412,9 +412,8 @@ newsletter-form {
 }
 .product-detail-page {
     font-family: Arial, Helvetica, sans-serif;
-    color: #aaa;
+    background-color: #fff;
 }
-
 
 /* PRODUCT SECTION */
 .product-section {
@@ -426,7 +425,7 @@ newsletter-form {
 }
 
 .thumbs img {
-    width: 60px;
+    width: 120px;
     margin-bottom: 12px;
     cursor: pointer;
 }
@@ -442,7 +441,7 @@ newsletter-form {
     margin: 0;
 }
 
-.brand {
+.product-brand {
     font-size: 12px;
     color: #777;
 }
@@ -471,13 +470,14 @@ newsletter-form {
     width: 100%;
     margin-top: 10px;
     padding: 10px;
-    background: #ddd;
+    background: #b0aeae;
     border: none;
 }
 
 .secondary-btn.outline {
     background: none;
-    border: 1px solid #aaa;
+    border: 1px solid #fbf7f7;
+     background: #b0aeae;
 }
 
 /* GREY INFO */
@@ -521,4 +521,386 @@ newsletter-form {
     background: #000;
     color: #fff;
     border: none;
+}
+.product-detail-page .purchase-row {
+    display: flex;
+    align-items: center;   /* KEY */
+    gap: 20px;
+}
+
+/* LEFT COLUMN */
+.product-detail-page .qty-stock {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;  /* 🔥 KEY FIX */
+}
+
+.product-detail-page .qty-btn {
+    width: 34px;
+    height: 100%;
+    background: none;
+    border: none;
+    color: #232222;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* SPACE BELOW STOCK TEXT */
+.product-detail-page .stock-status {
+    margin-bottom: 6px;        /* small controlled gap */
+    font-size: 11px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+
+/* QTY BOX */
+.product-detail-page .quantity {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    height: 38px;
+    min-height: 38px;
+    box-sizing: border-box;
+}
+.product-detail-page .quantity span {
+    padding: 0 12px;
+    font-size: 13px;
+    line-height: 38px;   /* 🔥 this is the key */
+}
+
+/* GET PRICE */
+.product-detail-page .price-btn {
+    height: 38px;              /* 🔥 SAME HEIGHT */
+    padding: 0px 20px;
+    background: #c9a56a;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+/* STOCK COLORS */
+.product-detail-page .in-stock {
+    color: #2e7d32;
+}
+
+.product-detail-page .out-stock {
+    color: #c62828;
+}
+.product-detail-page h2,
+.product-detail-page p,
+.product-detail-page li,
+.product-detail-page span {
+    color: #111;
+}
+.product-detail-page .quantity {
+    border: 1px solid #ccc;
+}
+
+.product-detail-page .qty-btn {
+    color: #111;
+}
+
+.product-detail-page .price-btn {
+    color: #fff; /* keep gold button text white */
+}
+/* MATERIALS & FINISHES (PRODUCT PAGE) */
+.product-detail-page .materials {
+    margin-top: 18px;
+}
+
+.product-detail-page .mat-title {
+    font-size: 11px;
+    letter-spacing: 1.2px;
+    color: #777;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.product-detail-page .mat-desc {
+    font-size: 12px;
+    color: #111;
+    letter-spacing: 0.3px;
+}
+.breadcrumbs {
+    font-size: 10px;
+    letter-spacing: 1px;
+    color: #999;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.info-links li {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.info-links span {
+    color: #aaa;
+    font-size: 14px;
+}
+.meta-title {
+    font-size: 11px;
+    font-weight: 600;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.meta p {
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.meta .muted {
+    font-size: 11px;
+    color: #999;
+}
+.materials {
+    margin-top: 14px;
+}
+.share {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 11px;
+    color: #777;
+    margin-top: 18px;
+}
+
+.share-icons span {
+    cursor: pointer;
+}
+
+.origin {
+    font-size: 10px;
+    color: #aaa;
+    margin-top: 12px;
+    letter-spacing: 1px;
+}
+.section-divider {
+    position: relative;
+    padding: 10px 0;
+    margin: 14px 0;
+}
+
+.section-divider::before,
+.section-divider::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: #e0e0e0;
+}
+
+.section-divider::before {
+    top: 0;
+}
+
+.section-divider::after {
+    bottom: 0;
+}
+/* WRAPPER */
+.additional-info {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+    background: #f3f3f3;
+    padding: 50px 60px;
+    font-family: "Poppins", sans-serif;
+}
+
+/* LEFT MENU */
+.info-menu p {
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    color: #999;
+    margin-bottom: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.info-menu p.active {
+    color: #111;
+    font-weight: 500;
+}
+
+/* RIGHT CONTENT */
+.info-content {
+    max-width: 780px;
+}
+
+/* MAIN PARAGRAPH */
+.info-text {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 22px;
+}
+
+/* BLOCKS */
+.info-block {
+    margin-bottom: 18px;
+}
+
+/* TITLES (same as product specs, but NO lines) */
+.info-block .spec-title {
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+/* TEXT */
+.info-block .spec-text {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* LINKS */
+.discover-link {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 11px;
+    color: #777;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.view-more {
+    display: block;
+    margin-top: 16px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #666;
+    cursor: pointer;
+}
+/* SECOND INFO SECTION */
+.info-bottom {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+    background: #ededed;
+    padding: 50px 60px;
+}
+
+/* RIGHT SIDE LAYOUT */
+.info-bottom-content {
+    display: grid;
+    grid-template-columns: 1fr 360px;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* TEXT */
+.custom-text p {
+    font-size: 12px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* FORM */
+.custom-form {
+    background: transparent;
+}
+
+.form-title {
+    font-size: 11px;
+    letter-spacing: 1.2px;
+    color: #666;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+/* RADIO */
+.custom-form .radio-group {
+    display: flex;
+    gap: 20px;
+    font-size: 11px;
+    color: #555;
+    margin-bottom: 14px;
+}
+
+/* INPUT GRID */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.form-grid input {
+    padding: 8px 10px;
+    font-size: 11px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+/* BUTTON */
+.request-btn {
+    width: 100%;
+    padding: 10px;
+    background: #000;
+    color: #fff;
+    font-size: 11px;
+    letter-spacing: 1.4px;
+    border: none;
+    cursor: pointer;
+}
+
+/* THIRD SECTION – TERMS */
+.terms-section {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 40px;
+    background: #d8d4d4;
+    padding: 50px 60px;
+    border-top: 1px solid #e5e5e5;
+}
+
+/* RIGHT CONTENT */
+.terms-content {
+    max-width: 900px;
+}
+
+/* HEADINGS */
+.terms-content h4 {
+    font-size: 11px;
+    letter-spacing: 1.2px;
+    color: #555;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+/* LIST */
+.terms-content ol {
+    padding-left: 18px;
+    margin-bottom: 20px;
+}
+
+.terms-content li {
+    font-size: 11px;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+/* PARAGRAPH */
+.terms-content p {
+    font-size: 11px;
+    color: #666;
+    line-height: 1.7;
 }
