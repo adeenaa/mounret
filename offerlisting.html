@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mounret – Luxury Interiors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Optional font polish */
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
+        }
+    </style>
+</head>
+
+<body>
+   <div data-include="home-partials/header.html"></div>
+   <section class="hero-ambassador">
+        <div class="hero-ambassador-content">
+            <h1>OFFERS</h1>
+            <p>Join our exclusive network of design partners</p>
+        </div>
+    </section>
+
+
+<!-- PACKAGES SECTION -->
+<section class="packages">
+
+   <div class="package-card">
+
+    <div class="package-header price-btn">
+  TOTAL PACKAGE COST
+</div>
+    <div class="package-price"><p>
+  Sofa<br>
+  <span>120 × 60 × 45 cm</span>
+</p></div>
+
+    <img src="files/images/artworks.webp" class="main-img  popup-img">
+
+    <div class="product-grid">
+
+      <div class="product">
+        <img src="files/images/sculpture.jpg " class="popup-img">
+       <p>
+  Coffee Table Set<br>
+  <span>120 × 60 × 45 cm</span>
+</p>
+      </div>
+
+      <div class="product">
+        <img src="files/images/candlelight.webp" class="popup-img">
+        <p>
+  Coffee Table Set<br>
+  <span>120 × 60 × 45 cm</span>
+</p>
+      </div>
+
+      <div class="product">
+        <img src="files/images/alarm.webp" class="popup-img">
+       <p>
+  Coffee Table Set<br>
+  <span>120 × 60 × 45 cm</span>
+</p>
+      </div>
+
+      <div class="product">
+        <img src="files/images/OIP.webp" class="popup-img">
+       <p>
+  Coffee Table Set<br>
+  <span>120 × 60 × 45 cm</span>
+</p>
+      </div>
+
+    </div>
+
+  </div>
+  <div class="package-card">
+
+    <div class="package-header price-btn">
+  Total Package Cost
+</div>
+    <div class="package-price"><p>
+  Bed<br>
+  <span>120 × 60 × 45 cm</span>
+</p></div>
+
+    <img src="files/images/artworks.webp" class="main-img  popup-img">
+
+    <div class="product-grid">
+
+      <div class="product">
+        <img src="files/images/sculpture.jpg " class="popup-img">
+       <p>
+  Coffee Table Set<br>
+  <span>120 × 60 × 45 cm</span>
+</p>
+      </div>
+
+      <div class="product">
+        <img src="files/images/candlelight.webp" class="popup-img">
+        <p>
+  Coffee Table Set<br>
+  <span>120 × 60 × 45 cm</span>
+</p>
+      </div>
+
+      <div class="product">
+        <img src="files/images/alarm.webp" class="popup-img">
+        <p>
+  Coffee Table Set<br>
+  <span>120 × 60 × 45 cm</span>
+</p>
+      </div>
+
+      <div class="product">
+        <img src="files/images/OIP.webp" class="popup-img">
+        <p>
+  Coffee Table Set<br>
+  <span>120 × 60 × 45 cm</span>
+</p>
+      </div>
+
+    </div>
+
+  </div>
+   <div class="package-card">
+
+    <div class="package-header price-btn">
+  Total Package Cost
+</div>
+    <div class="package-price"><p>
+  Bed<br>
+  <span>120 × 60 × 45 cm</span>
+</p></div>
+
+    <img src="files/images/artworks.webp" class="main-img  popup-img">
+
+    <div class="product-grid">
+
+      <div class="product">
+        <img src="files/images/sculpture.jpg " class="popup-img">
+       <p>
+  Coffee Table Set<br>
+  <span>120 × 60 × 45 cm</span>
+</p>
+      </div>
+
+      <div class="product">
+        <img src="files/images/candlelight.webp" class="popup-img">
+        <p>
+  Coffee Table Set<br>
+  <span>120 × 60 × 45 cm</span>
+</p>
+      </div>
+
+      <div class="product">
+        <img src="files/images/alarm.webp" class="popup-img">
+        <p>
+  Coffee Table Set<br>
+  <span>120 × 60 × 45 cm</span>
+</p>
+      </div>
+
+      <div class="product">
+        <img src="files/images/OIP.webp" class="popup-img">
+        <p>
+  Coffee Table Set<br>
+  <span>120 × 60 × 45 cm</span>
+</p>
+      </div>
+
+    </div>
+
+  </div>
+  
+
+
+  <!-- COPY THE SAME CARD 2 MORE TIMES -->
+
+</section>
+<!-- MODAL -->
+<div id="priceModal" class="price-modal">
+
+  <!-- dark background -->
+  <div class="modal-overlay"></div>
+
+  <div class="modal-box">
+
+      <button class="modal-close">×</button>
+
+      <h2 id="modalTitle">REQUEST PRICE</h2>
+      <p class="modal-sub">Please fill the form below</p>
+
+      <div class="profile-select">
+          <label><input type="radio" name="profile" checked> Private</label>
+          <label><input type="radio" name="profile"> Professional</label>
+      </div>
+
+      <form class="price-form">
+          <div class="two-col">
+              <input type="text" placeholder="First Name*" required>
+              <input type="text" placeholder="Last Name*" required>
+          </div>
+
+          <input type="email" placeholder="Email*" required>
+          <input type="text" placeholder="Phone">
+          <input type="text" placeholder="Country*">
+
+          <p class="privacy-text">
+              By submitting this form you agree to our 
+              <span>Privacy Policy</span>.
+          </p>
+
+          <button type="submit" class="submit-btn">
+              SEND REQUEST
+          </button>
+      </form>
+
+  </div>
+</div>
+<div id="imageViewer" class="viewer">
+  <span class="close-viewer">&times;</span>
+  <img id="viewerImg">
+</div>
+<div data-include="home-partials/footer.html"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+

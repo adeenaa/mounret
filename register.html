@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mounret – Luxury Interiors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div data-include="home-partials/header.html"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero-ambassador">
+        <div class="hero-ambassador-content">
+            <h1>AMBASSADOR PROGRAM</h1>
+            <p>Join our exclusive network of design partners</p>
+        </div>
+    </section>
+
+    <!-- AMBASSADOR SECTION -->
+    <section class="ambassador-section">
+
+        <div class="ambassador-wrapper">
+
+            <!-- LEFT IMAGE -->
+            <div class="amb-left">
+                <img src="files/images/ambassador.jpeg" alt="Ambassador Card">
+            </div>
+
+            <!-- RIGHT FORM -->
+            <div class="amb-right">
+
+                <h2>AMBASSADOR REGISTRATION</h2>
+
+                <p class="profile-title">SELECT YOUR PROFILE:</p>
+
+                <div class="radio-group">
+                    <label><input type="radio" name="profile" checked> PROFESSIONAL</label>
+                    <label><input type="radio" name="profile"> PRIVATE CLIENT</label>
+                </div>
+
+                <div class="form-row">
+                    <input type="text" placeholder="FIRST NAME *">
+                    <input type="text" placeholder="LAST NAME *">
+                </div>
+
+                <input type="email" placeholder="EMAIL *">
+                <input type="text" placeholder="SELECT INDUSTRY">
+                <input type="text" placeholder="COMPANY *">
+                <input type="text" placeholder="WEBSITE *">
+
+                <div class="form-bottom">
+                    <p>
+                        BY CLICKING REQUEST YOU CONFIRM THAT YOU HAVE READ AND
+                        ACCEPTED OUR PRIVACY POLICY.
+                    </p>
+                    <button>REGISTER</button>
+                </div>
+<p class="login-text">
+  Already a customer? <a href="login.html">Login</a>
+</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <div data-include="home-partials/brands.html"></div>
+    <div data-include="home-partials/footer.html"></div>
+
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Mounret – Luxury Interiors</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        body {
+            font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div data-include="home-partials/header.html"></div>
+
+    <!-- HERO SECTION -->
+    <section class="hero-ambassador">
+        <div class="hero-ambassador-content">
+            <h1>AMBASSADOR PROGRAM</h1>
+            <p>Join our exclusive network of design partners</p>
+        </div>
+    </section>
+
+    <!-- AMBASSADOR SECTION -->
+   <section class="ambassador-section">
+
+  <div class="ambassador-wrapper">
+
+    <!-- LEFT IMAGE -->
+    <div class="amb-left">
+      <img src="files/images/ambassador.jpeg" alt="Luxury Interior">
+    </div>
+
+    <!-- RIGHT LOGIN FORM -->
+    <div class="amb-right">
+
+      <h2>CUSTOMER LOGIN</h2>
+      <p class="login-subtitle">Access your ambassador dashboard</p>
+
+      <input type="email" placeholder="EMAIL ADDRESS *">
+      <input type="password" placeholder="PASSWORD *">
+
+      <div class="login-options">
+        <label class="remember">
+  <input type="checkbox"> Remember me
+</label>
+        <a href="#">Forgot password?</a>
+      </div>
+
+      <button class="login-btn">LOGIN</button>
+
+      <p class="login-text">
+        New here? <a href="register.html">Register</a>
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+    <div data-include="home-partials/brands.html"></div>
+    <div data-include="home-partials/footer.html"></div>
+
+</body>
+</html>

@@ -1,32 +1,30 @@
-<section class="
-    relative h-[80vh]
-    bg-[url('files/images/home4.jpg')]
-    bg-cover bg-center
-    flex items-end justify-center
-    pb-10
-  ">
-    <!-- Overlay (optional, subtle luxury contrast) -->
-    <div class="absolute inset-0 bg-white/10"></div>
+<section class="relative h-screen flex items-end justify-center overflow-hidden">
 
-    <!-- CONTENT -->
-    <div class="relative z-10 flex flex-col items-center text-center px-6">
-        <p class="
-        mb-8 text-2xl md:text-4xl
-        font-light tracking-wide
-        text-neutral-200 border rounded-full px-8 py-2 bg-black/60
-      ">
-            A creative journey through luxury interiors
+    <!-- Background Image -->
+    <div class="absolute inset-0">
+        <img src="files/images/home4.jpg"
+             class="w-full h-full object-cover"
+             alt="Luxury Interior">
+    </div>
+
+    <!-- Soft Luxury Overlay -->
+    <div class="absolute inset-0 bg-black/30"></div>
+
+    <!-- Content (BOTTOM) -->
+    <div class="relative z-10 text-center mb-[85px] px-6">
+
+        <h1 class="hero-title">
+            LUXURY INTERIORS
+        </h1>
+
+        <p class="hero-sub">
+            A CREATIVE JOURNEY THROUGH DESIGN
         </p>
 
-        <button class="
-        rounded-full border border-neutral-900
-        px-10 py-4 bg-neutral-400
-        text-sm font-medium tracking-widest
-        text-neutral-700
-        transition
-        hover:bg-neutral-900 hover:text-white
-      ">
-            EXPLORE NOW
-        </button>
+        <a href="#" class="hero-btn">
+            VIEW MORE
+        </a>
+
     </div>
+
 </section>

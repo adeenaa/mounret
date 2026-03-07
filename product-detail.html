@@ -8,31 +8,134 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     /* Optional font polish */
-    body {
-      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont;
-    }
+   
   </style>
 </head>
 
 <body>
+   <div data-include="home-partials/header.html"></div>
+<div class="product-detail-page"> <!-- PRODUCT SECTIONS --> <div data-include="product-detail-partials/product-section.html"></div>
+<section class="info-bottom">
 
-  <div class="product-detail-page">
+  <!-- SIDE MENU -->
+  <div class="info-menu">
+    <p class="active" onclick="switchTab('additional')">ADDITIONAL INFO</p>
+    <p onclick="switchTab('custom')">CUSTOMIZATION</p>
+    <p onclick="switchTab('terms')">TERMS & CONDITIONS</p>
+  </div>
 
-    <!-- PRODUCT SECTIONS -->
-    <div data-include="product-detail-partials/product-section.html"></div>
+  <!-- CONTENT AREA -->
+  <div class="info-bottom-content">
 
     <!-- ADDITIONAL INFO -->
-    <div data-include="product-detail-partials/additional-info.html"></div>
+    <div id="additional" class="tab-content active">
+      <p><em>Lumiere Wall Lamp</em> is an antique fixture in polished gold plated brass with an intricate edge detailing arm topped by an elegant pane glass lantern.</p>
 
-    <!-- CUSTOMIZATION -->
-    <div data-include="product-detail-partials/customization.html"></div>
+      <p class="spec-title">DIMENSIONS</p>
+      <p>WIDTH: 30 CM | DEPTH: 60 CM | HEIGHT: 45 CM</p>
 
+      <p class="spec-title">MATERIALS AND FINISHES</p>
+      <p>CASTED BRASS, GUN BLACK FINISH.</p>
+    </div>
+
+    
+      <!-- CUSTOMIZATION -->
+        <div class="tab-content" id="custom">
+
+            <div class="custom-text">
+                <p>
+                    Change dimensions or standard products, finishes, or materials to
+                    highlight your interior’s character.
+                </p>
+            </div>
+
+            <form class="custom-form">
+                <p class="form-title">SELECT YOUR PROFILE</p>
+
+                <div class="radio-group">
+                    <label><input type="radio" checked> PROFESSIONAL</label>
+                    <label><input type="radio"> PRIVATE CLIENT</label>
+                </div>
+
+                <div class="form-grid">
+                    <input type="text" placeholder="FIRST NAME*">
+                    <input type="text" placeholder="LAST NAME*">
+                    <input type="email" placeholder="EMAIL*">
+                    <input type="text" placeholder="SELECT INDUSTRY">
+                    <input type="text" placeholder="COMPANY">
+                </div>
+
+                <button type="submit" class="request-btn">
+                    REQUEST CUSTOMIZATION
+                </button>
+            </form>
+
+        </div>
     <!-- TERMS -->
-    <div data-include="product-detail-partials/terms.html"></div>
+    <div id="terms" class="tab-content">
+      <h4>PRICE</h4>
+        <ol>
+            <li>Specifications and prices may change without notice.</li>
+            <li>Prices refer to one unit and exclude VAT.</li>
+            <li>EX WORKS from Porto, Portugal.</li>
+            <li>Standard fabric included unless otherwise specified.</li>
+            <li>Standard packaging included.</li>
+        </ol>
+
+        <h4>ACCOUNTS & PAYMENT TERMS</h4>
+        <p>
+            Payment terms are subject to approval and vary based on order value and destination.
+        </p>
 
   </div>
 
-  <script src="home-script.js"></script>
+</section>
+  <div data-include="home-partials/footer.html"></div>
+  <div id="priceModal" class="price-modal">
+
+    <!-- Dark Background -->
+    <div class="modal-overlay" onclick="closePriceModal()"></div>
+
+    <!-- Modal Box -->
+    <div class="modal-box">
+
+        <button class="modal-close" onclick="closePriceModal()">×</button>
+
+       <h2 id="modalTitle">REQUEST PRICE</h2>
+        <p class="modal-sub">Please fill the form below</p>
+
+        <div class="profile-select">
+            <label><input type="radio" name="profile" checked> Private</label>
+            <label><input type="radio" name="profile"> Professional</label>
+        </div>
+
+        <form class="price-form">
+            <div class="two-col">
+                <input type="text" placeholder="First Name*" required>
+                <input type="text" placeholder="Last Name*" required>
+            </div>
+
+            <input type="email" placeholder="Email*" required>
+            <input type="text" placeholder="Phone">
+            <input type="text" placeholder="Country*">
+
+            <p class="privacy-text">
+                By submitting this form you agree to our 
+                <span>Privacy Policy</span>.
+            </p>
+
+            <button type="submit" class="submit-btn">
+                SEND REQUEST
+            </button>
+        </form>
+
+    </div>
+</div>
+<script src="script.js"></script>
+  
 </body>
 
 </html>
+
+
+
