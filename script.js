@@ -18,7 +18,26 @@ document.addEventListener("DOMContentLoaded", async () => {
       console.error("Failed to load:", file);
     }
   }
+/* =========================
+     MOBILE MENU
+  ========================== */
 
+  const toggle = document.getElementById('menuToggle');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  if (toggle && mobileMenu) {
+    toggle.addEventListener('click', function () {
+      mobileMenu.classList.toggle('open');
+      toggle.textContent = mobileMenu.classList.contains('open') ? '✕' : '☰';
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(function (link) {
+      link.addEventListener('click', function () {
+        mobileMenu.classList.remove('open');
+        toggle.textContent = '☰';
+      });
+    });
+  }
   /* =========================
      PRODUCT QUANTITY
   ========================== */
@@ -182,7 +201,16 @@ function switchTab(tabId){
 
   event.target.classList.add("active");
 }
-
+/* =========================
+   CONTACT FORM SUBMIT
+========================== */
+document.addEventListener('submit', function(e) {
+    const form = e.target.closest('form');
+    if (form && form.querySelector('.submit-btn')) {
+        e.preventDefault();
+        window.location.href = 'thanks.html';
+    }
+});
 /* =========================
    IMAGE POPUP
 ========================== */
